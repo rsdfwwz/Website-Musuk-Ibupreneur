@@ -1185,7 +1185,8 @@ section {
     
     /* Potong teks jika kepanjangan (Max 4 baris) */
     display: -webkit-box;
-    -webkit-line-clamp: 4; 
+    -webkit-line-clamp: 4;
+    line-clamp: 4; /* Tambahkan baris ini untuk menghilangkan peringatan kuning */
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
