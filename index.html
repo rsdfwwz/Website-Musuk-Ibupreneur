@@ -1,0 +1,935 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSUK IBUPRENEUR</title>
+    <meta name="description" content="Premium avocado products made by local Indonesian farmers. Luxury, organic, and meticulously cultivated.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="512×512" href="assets/logo/logo.png">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!-- Loader -->
+    <div class="loader" id="loader">
+        <div class="loader__brand">DESA MUSUK</div>
+        <div class="loader__bar-container">
+            <div class="loader__bar" id="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">MUSUK IBUPRENEUR VILLAGE</a>
+            
+            <nav class="header__nav" id="nav">
+                <ul class="header__menu">
+                    <li><a href="#home" class="header__link active">Beranda</a></li>
+                    <li><a href="#about" class="header__link">Tentang</a></li>
+                    <li><a href="#products" class="header__link">Produk</a></li>
+                    <li><a href="#features" class="header__link">Kualitas</a></li>
+                    <li><a href="#gallery" class="header__link">Galeri</a></li>
+                    <li><a href="#faq" class="header__link">FAQ</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="#contact" class="btn btn--primary btn--small">Hubungi Kami</a>
+                <button class="header__toggle" id="menu-toggle" aria-label="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="container hero__container">
+                <div class="hero__content">
+                    <div class="badge reveal-fade-up">
+                        <span class="badge__dot"></span> 100% Organik & Produk Lokal
+                    </div>
+                    <h1 class="hero__title reveal-fade-up" style="transition-delay: 0.1s;">
+                        Inovasi Alami <span class="text-gradient">Nutrisi Mewah Setiap Hari</span>.
+                    </h1>
+                    <p class="hero__desc reveal-fade-up" style="transition-delay: 0.2s;">
+                        Nikmati olahan alpukat mentega premium dan susu segar lokal yang kaya nutrisi, serta mendukung kemandirian ekonomi ibu rumah tangga Desa Musuk.
+                    </p>
+                    <div class="hero__actions reveal-fade-up" style="transition-delay: 0.3s;">
+                        <a href="#products" class="btn btn--primary">
+                            Jelajahi Lebih Lanjut
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </a>
+                        <a href="#products" class="btn btn--secondary">Beli Produk</a>
+                    </div>
+                    
+                    <div class="hero__stats reveal-fade-up" style="transition-delay: 0.4s;">
+                        <div class="stat">
+                            <span class="stat__number" data-target="15">0</span><span class="stat__suffix">+</span>
+                            <span class="stat__label">Tahun Diwariskan</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-target="100">0</span><span class="stat__suffix">%</span>
+                            <span class="stat__label">Bahan Organik</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number" data-target="50">0</span><span class="stat__suffix">+</span>
+                            <span class="stat__label">Wanita Tani</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero__visual reveal-fade-left">
+                    <div class="hero__blob"></div>
+                    <div class="hero__image-wrapper parallax-container">
+                        <img src="assets/hero/hero.png" alt="Premium Desa Musuk Avocado" class="hero__image parallax-item" data-speed="0.05">
+                        
+                        <!-- Floating Cards -->
+                        <div class="floating-card floating-card--1 float-anim">
+                            <div class="floating-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4DAA57" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            </div>
+                            <div>
+                                <div class="floating-card__title">Kualitas Premium</div>
+                                <div class="floating-card__sub">Dipilih Oleh Petani</div>
+                            </div>
+                        </div>
+                        
+                        <div class="floating-card floating-card--2 float-anim-delayed">
+                            <div class="floating-card__icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#4DAA57" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            </div>
+                            <div>
+                                <div class="floating-card__title">Jawa Tengah</div>
+                                <div class="floating-card__sub">Desa Musuk</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <a href="#about" class="scroll-indicator" aria-label="Scroll Down">
+                <div class="scroll-indicator__mouse"></div>
+            </a>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section-padding">
+            <div class="container about__container">
+                <div class="about__visual reveal-fade-right">
+                    <figure class="about__figure">
+                        <img src="assets/about/about.jpg" alt="Desa Musuk Farmers" class="about__image">
+                        <div class="about__experience card-glass">
+                            <p class="about__exp-title">"Merajut masa depan yang lebih baik bagi anak-anak kami, stoples demi stoples."</p>
+                            <p class="about__exp-desc">— Kelompok Ibu Tani, Desa Binaan</p>
+                        </div>
+                    </figure>
+                </div>
+                <div class="about__content reveal-fade-left">
+                    <div class="section-tag">Fokus Kami</div>
+                    <h2 class="section-title">Menempa Potensi, Merajut Ekonomi.</h2>
+                    <p class="section-desc">
+                        Musuk Ibupreneur Village merupakan wadah pemberdayaan kolektif bagi kelompok Ibu Rumah Tangga. Kami menggabungkan potensi agroindustri lokal dengan inovasi modern untuk menghasilkan komoditas bernilai jual tinggi demi kemandirian ekonomi keluarga.
+                    
+                    <ul class="about__list">
+                        <li class="about__list-item">
+                            <div class="about__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            </div>
+                            <span>Fasilitas produksi bebas limbah (zero-waste) di desa mitra.</span>
+                        </li>
+                        <li class="about__list-item">
+                            <div class="about__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            </div>
+                            <span>100% menggunakan buah & daun alpukat lokal pilihan.</span>
+                        </li>
+                        <li class="about__list-item">
+                            <div class="about__icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                            </div>
+                            <span>Model ekonomi inklusif yang memaksimalkan laba kelompok tani.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+<!-- Products Section -->
+<section id="products" class="products section-padding">
+    <div class="container">
+        <div class="section-header reveal-fade-up">
+            <div class="section-tag">Produk Unggulan</div>
+            <h2 class="section-title">Koleksi Produk Kami</h2>
+        </div>
+
+        <div class="products__grid">
+
+            <!-- Product 1 -->
+            <article class="product-card reveal-fade-up">
+                <div class="product-card__image-wrapper">
+                    <div class="product-card__badge">Terlaris</div>
+                    <img src="assets/products/product-1.png" alt="Signature Hass Box" class="product-card__image">
+                </div>
+
+                <div class="product-card__content">
+                    <span class="product-card__category">
+                        Minuman Alpukat
+                    </span>
+
+                    <h3 class="product-card__title">
+                        Yoghurt Alpukat Premium
+                    </h3>
+
+                    <p class="product-card__desc">
+                        Nikmati kesegaran murni perpaduan kelembutan daging alpukat mentega premium khas Musuk dan fermentasi susu sapi segar. Sumber probiotik lezat yang baik untuk pencernaan keluarga.
+                    </p>
+
+                    <div class="product-card__footer">
+                        
+                        <div class="product-card__price-wrapper">
+                            <span class="price-label">Kisaran Harga Mitra:</span>
+                            <span class="product-card__price">Rp89.000 - 95.000</span>
+                        </div>
+
+                        <div class="product-card__marketplace-wrapper">
+                            <span class="marketplace-label">Dapat dibeli di:</span>
+                            
+                            <div class="product-card__actions">
+                                <a href="https://shopee.co.id/NAMA-TOKO"
+                                   target="_blank"
+                                   class="btn-buy btn-shopee"
+                                   aria-label="Beli di Shopee">
+                                    <img src="https://freelogopng.com/images/all_img/1656181199icon-shopee-png.png" alt="Shopee">
+                                    Shopee
+                                </a>
+
+                                <a href="https://www.tiktok.com/@username/shop"
+                                   target="_blank"
+                                   class="btn-buy btn-tiktok"
+                                   aria-label="Beli di TikTok Shop">
+                                    <img src="https://tse3.mm.bing.net/th/id/OIP.uYDJvFTxN0uuBRGI_QKfzwHaHa?r=0&w=1040&h=1040&rs=1&pid=ImgDetMain&o=7&rm=3" alt="TikTok">
+                                    TikTok
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 2 -->
+            <article class="product-card reveal-fade-up" style="transition-delay:.1s;">
+                <div class="product-card__image-wrapper">
+                    <img src="assets/products/product-2.png"
+                         alt="Cold Pressed Avocado Oil"
+                         class="product-card__image">
+                </div>
+
+                <div class="product-card__content">
+                    <span class="product-card__category">
+                        Minuman Alpukat
+                    </span>
+
+                    <h3 class="product-card__title">
+                        Teh Herbal Daun Alpukat
+                    </h3>
+
+                    <p class="product-card__desc">
+                        Seduhan kesehatan eksklusif yang diproses alami dari daun alpukat pilihan melalui metode pengeringan optimal. Kaya akan antioksidan untuk menjaga kebugaran dan imunitas tubuh harian Anda.
+                    </p>
+
+                    <div class="product-card__footer">
+                        
+                        <div class="product-card__price-wrapper">
+                            <span class="price-label">Kisaran Harga Mitra:</span>
+                            <span class="product-card__price">Rp69.000 - 75.000</span>
+                        </div>
+
+                        <div class="product-card__marketplace-wrapper">
+                            <span class="marketplace-label">Dapat dibeli di:</span>
+                            
+                            <div class="product-card__actions">
+                                <a href="https://shopee.co.id/NAMA-TOKO"
+                                   target="_blank"
+                                   class="btn-buy btn-shopee"
+                                   aria-label="Beli di Shopee">
+                                    <img src="https://freelogopng.com/images/all_img/1656181199icon-shopee-png.png" alt="Shopee">
+                                    Shopee
+                                </a>
+
+                                <a href="https://www.tiktok.com/@username/shop"
+                                   target="_blank"
+                                   class="btn-buy btn-tiktok"
+                                   aria-label="Beli di TikTok Shop">
+                                    <img src="https://tse3.mm.bing.net/th/id/OIP.uYDJvFTxN0uuBRGI_QKfzwHaHa?r=0&w=1040&h=1040&rs=1&pid=ImgDetMain&o=7&rm=3" alt="TikTok">
+                                    TikTok
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+            <!-- Product 3 -->
+            <article class="product-card reveal-fade-up" style="transition-delay:.2s;">
+                <div class="product-card__image-wrapper">
+                    <div class="product-card__badge">
+                        Favorit
+                    </div>
+                    <img src="assets/products/product-3.png"
+                         alt="Avocado Blossom Honey"
+                         class="product-card__image">
+                </div>
+
+                <div class="product-card__content">
+                    <span class="product-card__category">
+                        Topping Alpukat
+                    </span>
+
+                    <h3 class="product-card__title">
+                        Selai Alpukat Premium
+                    </h3>
+
+                    <p class="product-card__desc">
+                        Olesan roti premium bertekstur selembut mentega dengan sentuhan rasa manis alami kelapa organik yang rendah indeks glikemik. Teman sarapan terbaik yang sehat, praktis, dan padat nutrisi.
+                    </p>
+
+                    <div class="product-card__footer">
+                        
+                        <div class="product-card__price-wrapper">
+                            <span class="price-label">Kisaran Harga Mitra:</span>
+                            <span class="product-card__price">Rp55.000 - 60.000</span>
+                        </div>
+
+                        <div class="product-card__marketplace-wrapper">
+                            <span class="marketplace-label">Dapat dibeli di:</span>
+                            
+                            <div class="product-card__actions">
+                                <a href="https://shopee.co.id/NAMA-TOKO"
+                                   target="_blank"
+                                   class="btn-buy btn-shopee"
+                                   aria-label="Beli di Shopee">
+                                    <img src="https://freelogopng.com/images/all_img/1656181199icon-shopee-png.png" alt="Shopee">
+                                    Shopee
+                                </a>
+
+                                <a href="https://www.tiktok.com/@username/shop"
+                                   target="_blank"
+                                   class="btn-buy btn-tiktok"
+                                   aria-label="Beli di TikTok Shop">
+                                    <img src="https://tse3.mm.bing.net/th/id/OIP.uYDJvFTxN0uuBRGI_QKfzwHaHa?r=0&w=1040&h=1040&rs=1&pid=ImgDetMain&o=7&rm=3" alt="TikTok">
+                                    TikTok
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- Features Section -->
+        <section id="features" class="features bg-light section-padding">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <div class="section-tag">STANDAR KUALITAS</div>
+                    <h2 class="section-title">Rahasia Kualitas Unggul</h2>
+                    <p class="section-desc mx-auto">Setiap alpukat yang membawa nama kami telah melalui standar ketat untuk memastikan Anda hanya menikmati hasil panen terbaik.</p>
+                </div>
+
+                <div class="features__grid">
+                    <div class="feature-card reveal-fade-up">
+                        <div class="feature-card__icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Tekstur Lembut</h3>
+                        <p class="feature-card__desc">Kandungan minyak alami yang tinggi menghasilkan sensasi lembut, legit, dan kaya di mulut, memberikan pengalaman rasa terbaik</p>
+                    </div>
+                    
+                    <div class="feature-card reveal-fade-up" style="transition-delay: 0.1s;">
+                        <div class="feature-card__icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Padat Nutrisi</h3>
+                        <p class="feature-card__desc">buah kami kaya akan vitamin esensial, antioksidan, serta lemak baik yang sangat menyehatkan tubuh.</p>
+                    </div>
+
+                    <div class="feature-card reveal-fade-up" style="transition-delay: 0.2s;">
+                        <div class="feature-card__icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">Kematangan Sempurna</h3>
+                        <p class="feature-card__desc">Dipanen pada waktu yang tepat untuk memastikan proses pematangan alami dan kualitas terjaga..</p>
+                    </div>
+
+                    <div class="feature-card reveal-fade-up" style="transition-delay: 0.3s;">
+                        <div class="feature-card__icon-wrapper">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                        </div>
+                        <h3 class="feature-card__title">100% Organik</h3>
+                        <p class="feature-card__desc">Dibudidayakan tanpa sentuhan bahan kimia sintetis maupun pestisida buatan, guna menjaga kemurnian dan kebaikan alam seutuhnya.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery bg-light section-padding">
+            <div class="container">
+                <div class="section-header text-center reveal-fade-up">
+                    <div class="section-tag">Galeri</div>
+                    <h2 class="section-title">Desa Musuk</h2>
+                </div>
+
+                <div class="gallery__masonry">
+                    <div class="gallery__item reveal-fade-up">
+                        <img src="assets/gallery/gallery-1.jpg" alt="Farm view" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__overlay-text">Kebun Alpukat</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item reveal-fade-up" style="transition-delay: 0.1s;">
+                        <img src="assets/gallery/gallery-2.jpg" alt="Harvest" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__overlay-text">Masa Panen</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item reveal-fade-up" style="transition-delay: 0.2s;">
+                        <img src="assets/gallery/gallery-3.jpg" alt="Quality check" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__overlay-text">Pengecekan Kualitas</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item reveal-fade-up">
+                        <img src="assets/gallery/gallery-4.jpg" alt="Fresh avocado" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__overlay-text">Proses Produksi</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item reveal-fade-up" style="transition-delay: 0.1s;">
+                        <img src="assets/gallery/gallery-5.jpg" alt="Farmers" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__overlay-text">Kelompok Wanita Tani</span>
+                        </div>
+                    </div>
+                    <div class="gallery__item reveal-fade-up" style="transition-delay: 0.2s;">
+                        <img src="assets/gallery/gallery-6.jpg" alt="Nature" class="gallery__image">
+                        <div class="gallery__overlay">
+                            <span class="gallery__overlay-text">Komunitas Kami</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline Section -->
+        <section id="timeline" class="timeline section-padding">
+            <div class="container">
+                <div class="section-header reveal-fade-up">
+                    <div class="section-tag">Proses</div>
+                    <h2 class="section-title">Dari Benih ke Meja</h2>
+                </div>
+
+                <div class="timeline__container">
+                    <div class="timeline__line">
+                        <div class="timeline__progress" id="timeline-progress"></div>
+                    </div>
+                    
+                    <div class="timeline__item reveal-fade-up">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content card-glass">
+                            <span class="timeline__date">Tahap 01</span>
+                            <h3 class="timeline__title">Panen</h3>
+                            <p class="timeline__desc">Buah pilihan dipetik langsung oleh petani ahli pada waktu yang tepat untuk memberikan kualitas yang terbaik.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item reveal-fade-up">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content card-glass">
+                            <span class="timeline__date">Tahap 02</span>
+                            <h3 class="timeline__title">Pengolahan</h3>
+                            <p class="timeline__desc">Melalui proses pengolahan yang higienis di fasilitas ramah lingkungan untuk menghasilkan komoditas agroindustri berkualitas tinggi.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline__item reveal-fade-up">
+                        <div class="timeline__dot"></div>
+                        <div class="timeline__content card-glass">
+                            <span class="timeline__date">Tahap 03</span>
+                            <h3 class="timeline__title">Pengemasan</h3>
+                            <p class="timeline__desc">Dikemas dengan aman dan rapi guna memastikan produk tiba di tangan konsumen dalam kondisi yang sempurna.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+<!-- Testimonials Section -->
+<section id="testimonials" class="testimonials bg-light section-padding">
+    <div class="container">
+        <div class="section-header text-center reveal-fade-up">
+            <div class="section-tag">Ulasan Pelanggan</div>
+            <h2 class="section-title">Pelanggan Berbicara</h2>
+        </div>
+
+        <div class="testimonials__slider reveal-fade-up">
+            <div class="testimonials__track" id="testimonial-track">
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">"Yoghurt terbaik yang pernah aku cicipi. Teksturnya seperti mentega dan rasanya sangat pas di lidah, saya paling suka dalam keadaan dingin."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">JG</div>
+                        <div>
+                            <div class="testimonial-card__name">Javier Gavra</div>
+                            <div class="testimonial-card__role">Pelanggan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">"Produk nya premium. Kemasanya cantik banget dan buah alpukat nya terasa, ini sih jadi favorit ku terus."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">BB</div>
+                        <div>
+                            <div class="testimonial-card__name">Bapak Budi</div>
+                            <div class="testimonial-card__role">Pelanggan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">"Kamu bisa ngerasain perhatian yang ditaruh di kebun ini. Ini pengalaman mewah dari buka kotak sampai gigitan pertama."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">VC</div>
+                        <div>
+                            <div class="testimonial-card__name">Vitto Corleone</div>
+                            <div class="testimonial-card__role">Pelanggan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">"Pelayanan luar biasa dan kualitasnya selalu konsisten. Sangat direkomendasikan untuk pecinta makanan sehat dan organik di seluruh Indonesia."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">AD</div>
+                        <div>
+                            <div class="testimonial-card__name">Andi Darmawan</div>
+                            <div class="testimonial-card__role">Pelanggan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="testimonial-card__stars">★★★★★</div>
+                    <p class="testimonial-card__text">"Inovasi yang brilian. Tidak hanya rasanya yang enak, tetapi presentasinya juga sangat memanjakan mata. Sempurna untuk hampers."</p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">LN</div>
+                        <div>
+                            <div class="testimonial-card__name">Lina Nabila</div>
+                            <div class="testimonial-card__role">Pelanggan</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- =========================================
+     FAQ + AI ASSISTANT
+     ========================================= -->
+<section id="faq" class="faq section-padding">
+
+    <div class="container">
+
+        <!-- ================================
+             FAQ
+             ================================ -->
+        <div class="faq__container">
+
+            <!-- FAQ LEFT -->
+            <div class="faq__header reveal-fade-right">
+
+                <div class="section-tag">
+                    Pertanyaan
+                </div>
+
+                <h2 class="section-title">
+                    Sering<br>
+                    Ditanyakan
+                </h2>
+
+                <p class="section-desc">
+                    Pelajari lebih banyak tentang produk kami,
+                    pengiriman, pembelian, dan proses produksi.
+                </p>
+
+            </div>
+
+
+            <!-- FAQ RIGHT -->
+            <div class="faq__accordion reveal-fade-left">
+
+                <!-- FAQ 1 -->
+                <div class="accordion-item">
+
+                    <button
+                        class="accordion-header"
+                        type="button"
+                        aria-expanded="false"
+                    >
+                        <span>
+                            Berapa lama biasanya produk dapat bertahan?
+                        </span>
+
+                        <span class="accordion-icon">
+                            +
+                        </span>
+                    </button>
+
+                    <div class="accordion-content">
+
+                        <div class="accordion-inner">
+                            Ketahanan setiap produk dapat berbeda
+                            tergantung jenis produk dan cara
+                            penyimpanannya. Simpan produk sesuai
+                            petunjuk pada kemasan untuk menjaga
+                            kualitas dan kesegarannya.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 2 -->
+                <div class="accordion-item">
+
+                    <button
+                        class="accordion-header"
+                        type="button"
+                        aria-expanded="false"
+                    >
+                        <span>
+                            Dimana kami dapat membeli produknya?
+                        </span>
+
+                        <span class="accordion-icon">
+                            +
+                        </span>
+                    </button>
+
+                    <div class="accordion-content">
+
+                        <div class="accordion-inner">
+                            Produk Musuk Ibupreuner Village dapat
+                            dibeli melalui marketplace resmi kami.
+                            Silakan pilih produk yang ingin dibeli
+                            kemudian gunakan tombol Shopee atau
+                            TikTok Shop pada kartu produk.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAQ 3 -->
+                <div class="accordion-item">
+
+                    <button
+                        class="accordion-header"
+                        type="button"
+                        aria-expanded="false"
+                    >
+                        <span>
+                            Apakah produk bersertifikat halal?
+                        </span>
+
+                        <span class="accordion-icon">
+                            +
+                        </span>
+                    </button>
+
+                    <div class="accordion-content">
+
+                        <div class="accordion-inner">
+                            Informasi mengenai sertifikasi produk
+                            dapat berbeda pada setiap produk.
+                            Untuk mendapatkan informasi yang paling
+                            akurat, silakan tanyakan kepada Asisten
+                            Desa Musuk di bawah ini atau hubungi
+                            kami secara langsung.
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================================
+             AI ASSISTANT
+             ================================ -->
+        <div class="ai-assistant">
+
+            <!-- AI HEADER -->
+            <div class="ai-assistant__header">
+
+                <div class="ai-assistant__identity">
+
+                    <div class="ai-assistant__avatar">
+                        <span>✦</span>
+                    </div>
+
+                    <div>
+                        <h3>
+                            Asisten Desa Musuk
+                        </h3>
+
+                        <span class="ai-assistant__status">
+                            <span class="ai-status-dot"></span>
+                            Siap membantu
+                        </span>
+                    </div>
+
+                </div>
+
+                <div class="ai-assistant__badge">
+                    AI Assistant
+                </div>
+
+            </div>
+
+
+            <!-- CHAT AREA -->
+            <div
+                class="ai-chat"
+                id="aiChat"
+                aria-live="polite"
+            >
+
+                <!-- AI INITIAL MESSAGE -->
+                <div class="ai-message ai-message--bot">
+
+                    <div class="ai-message__avatar">
+                        ✦
+                    </div>
+
+                    <div class="ai-message__content">
+
+                        <span class="ai-message__name">
+                            Asisten Desa Musuk
+                        </span>
+
+                        <div class="ai-message__bubble">
+                            Halo! 👋<br><br>
+
+                            Saya adalah Asisten Desa Musuk.
+                            Saya siap membantu menjawab pertanyaan
+                            mengenai produk, pembelian, pengiriman,
+                            proses produksi, dan informasi lainnya
+                            seputar Musuk Ibupreuner Village.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- QUICK QUESTIONS -->
+                <div class="ai-quick-questions">
+
+                    <button
+                        type="button"
+                        class="ai-quick-question"
+                        data-question="Produk apa saja yang tersedia?"
+                    >
+                        Produk apa saja?
+                    </button>
+
+                    <button
+                        type="button"
+                        class="ai-quick-question"
+                        data-question="Bagaimana cara membeli produk?"
+                    >
+                        Cara membeli?
+                    </button>
+
+                    <button
+                        type="button"
+                        class="ai-quick-question"
+                        data-question="Dimana saya bisa membeli produk?"
+                    >
+                        Dimana belinya?
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- INPUT -->
+            <form
+                class="ai-input"
+                id="aiForm"
+            >
+
+                <input
+                    type="text"
+                    id="aiInput"
+                    class="ai-input__field"
+                    placeholder="Tanyakan sesuatu tentang produk kami..."
+                    autocomplete="off"
+                    maxlength="500"
+                >
+
+                <button
+                    type="submit"
+                    class="ai-input__send"
+                    aria-label="Kirim pertanyaan"
+                >
+
+                    <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <line
+                            x1="22"
+                            y1="2"
+                            x2="11"
+                            y2="13"
+                        ></line>
+
+                        <polygon
+                            points="22 2 15 22 11 13 2 9 22 2"
+                        ></polygon>
+
+                    </svg>
+
+                </button>
+
+            </form>
+
+
+            <div class="ai-assistant__footer">
+                Asisten AI dapat membantu memberikan informasi
+                seputar produk Musuk Ibupreuner Village.
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section-padding">
+            <div class="container contact__container reveal-fade-up">
+                <div class="contact__content text-center">
+                    <h2 class="contact__title">Hubungi Produsen</h2>
+                    <p class="contact__desc">Hubungi kami untuk pertanyaan seputar produk atau pertanyaan lainnya.</p>
+                    <div class="contact__actions">
+                        <a href="mailto:hello@desamusuk.com" class="btn btn--primary">Email</a>
+                        <a href="#" class="btn btn--secondary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                            WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">MUSUK IBUPRENEUR</a>
+                    <p class="footer__desc">Memberdayakan ibu rumah tangga melalui kreativitas lokal dan inovasi agroindustri berkelanjutan.</p>
+                </div>
+                
+                <div class="footer__links">
+                    <h4 class="footer__title">Navigasi</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="#about">Tentang</a></li>
+                        <li><a href="#products">Produk</a></li>
+                        <li><a href="#gallery">Galeri</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Shipping Info</a></li>
+                        <li><a href="#">Refunds</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__links">
+                    <h4 class="footer__title">Sosial</h4>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Tiktok</a></li>
+                        <li><a href="#">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>© 2026 Musuk Ibupreneur Village. IMM Fakultas Ilmu Kesehatan Universitas Muhammadiyah Surakarta.</p>
+                <div class="footer__location">
+                    Boyolali, Jawa Tengah, Indonesia
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+    </button>
+
+    <!-- Script -->
+    <script src="./js/animation.js"></script>
+<script src="./js/script.js"></script>
+</body>
+</html>
