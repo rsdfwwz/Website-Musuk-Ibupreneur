@@ -598,24 +598,31 @@ document.addEventListener("DOMContentLoaded", () => {
             if (question) handleUserQuestion(question);
         });
     });
-    /* =====================================================
-   10. TESTIMONIAL CAROUSEL 3D LOGIC
-   ===================================================== */
+ /* =====================================================
+    10. TESTIMONIAL CAROUSEL 3D LOGIC
+    ===================================================== */
+
 const track = document.getElementById("testimonial-track");
 
 if (track) {
-    const cards = Array.from(track.querySelectorAll(".testimonial-card"));
+    const cards = Array.from(
+        track.querySelectorAll(".testimonial-card")
+    );
+
     let currentIdx = 0;
     let sliderInterval = null;
+    let initialTimeout = null;
 
     function renderCarousel() {
         const total = cards.length;
-        
+
         // Bersihkan semua class tambahan
-        cards.forEach(c => c.className = "testimonial-card");
+        cards.forEach(card => {
+            card.className = "testimonial-card";
+        });
 
         if (total >= 5) {
-            // Mode Carousel Penuh (Butuh min. 5 card)
+            // Mode Carousel Penuh
             const cIdx = currentIdx;
             const lIdx = (currentIdx - 1 + total) % total;
             const rIdx = (currentIdx + 1) % total;
@@ -625,11 +632,12 @@ if (track) {
             cards[lIdx].classList.add("show-left");
             cards[cIdx].classList.add("show-center");
             cards[rIdx].classList.add("show-right");
+
             cards[edgeLIdx].classList.add("edge-left");
             cards[edgeRIdx].classList.add("edge-right");
-        } 
-        else if (total === 3 || total === 4) {
-            // Mode Statis (Kalau card-nya kurang dari 5, pajang 3 di depan tanpa efek muter)
+
+        } else if (total === 3 || total === 4) {
+            // Mode Statis
             cards[0].classList.add("show-left");
             cards[1].classList.add("show-center");
             cards[2].classList.add("show-right");
@@ -643,16 +651,42 @@ if (track) {
         }
     }
 
-    // Jalankan pertama kali
+    function startAutoPlay() {
+        // Hindari interval berjalan lebih dari satu
+        clearInterval(sliderInterval);
+
+        sliderInterval = setInterval(() => {
+            nextSlide();
+        }, 4000);
+    }
+
+    // =====================================================
+    // INITIAL RENDER
+    // =====================================================
+
     renderCarousel();
 
-    // Auto-play (Tiap 4 detik)
-    if (cards.length >= 5) {
-        sliderInterval = setInterval(nextSlide, 4000);
+    // =====================================================
+    // AUTO PLAY
+    // =====================================================
 
-        track.addEventListener("mouseenter", () => clearInterval(sliderInterval));
+    if (cards.length >= 5) {
+
+        // Beri waktu untuk melihat posisi awal
+        initialTimeout = setTimeout(() => {
+            nextSlide();
+            startAutoPlay();
+        }, 1000);
+
+        // Pause ketika mouse berada di carousel
+        track.addEventListener("mouseenter", () => {
+            clearTimeout(initialTimeout);
+            clearInterval(sliderInterval);
+        });
+
+        // Lanjutkan ketika mouse keluar
         track.addEventListener("mouseleave", () => {
-            sliderInterval = setInterval(nextSlide, 4000);
+            startAutoPlay();
         });
     }
 }
